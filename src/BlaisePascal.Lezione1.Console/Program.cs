@@ -2,14 +2,24 @@
 { 
     public static void Main()
     {
-        Console.WriteLine("Benvenuto nella libreria Easy Class 3E!");
+
+        //Stampo a video il messaggio per chiedere il nome del cliente
+        Console.WriteLine("Inserisci il nome del cliente:");
+        //Successivamente assegno il valore letto alla variabile
+        string nomeCliente = Console.ReadLine();
+
+        Console.WriteLine($"Benvenuto {nomeCliente} nella Easy Class 3E!");
+
+        Console.WriteLine("Inserisci il tipo di spedizione:");
+        string tipoConsegna = Console.ReadLine();
+
+        Console.WriteLine("Inserisci il numero di pacchi acquistati:");
+        int numeroPacchiComprati = int.Parse(Console.ReadLine());
+
 
         int costoSpedizioneSingoloPacco = 5; // dichiarazione + assegnazione
         costoSpedizioneSingoloPacco = 10; // assegnazione
 
-        int numeroPacchiComprati = 2;
-
-        string tipoConsegna = "Standard"; // dichiarazione
 
         int costoTotale = costoSpedizioneSingoloPacco * numeroPacchiComprati;
 
