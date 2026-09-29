@@ -1,4 +1,6 @@
-﻿public class Program
+﻿using BlaisePascal.Lezione1.Domain;
+
+public class Program
 { 
     public static void Main()
     {
@@ -28,6 +30,7 @@
         //che permette di inserire variabili all'interno di una stringa di messaggio
         Console.WriteLine($"Il tipo di consegna selezionato è: {tipoConsegna} e il costo totale è {costoTotale}");
 
-
+        // [Tipo] [nomeOggetti] = new [Tipo]();
+        Enemy newEnemy = new Enemy();
     }
 }
